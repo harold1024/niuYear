@@ -74,10 +74,16 @@
         </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="swiper-slide4 swiper-slide">4</div>
+        <div class="swiper-slide4 swiper-slide">
+          <Robot></Robot>
+        </div>
       </swiper-slide>
       <swiper-slide>
-        <div class="swiper-slide5 swiper-slide">5</div>
+        <div class="swiper-slide5 swiper-slide">
+          <img src="../assets/images/cool.jpg" alt="" style="width: 100%" />
+          <div>作者: <span>@harold</span></div>
+          <div></div>
+        </div>
       </swiper-slide>
     </swiper>
     <div class="swiperBtnNext animate__animated animate__fadeIn delay12">
@@ -96,6 +102,8 @@
 // import { Swiper, SwiperSlide } from "vue-awesome-swiper";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import Draw from "../components/draw";
+import Robot from "../components/robot";
+import { wexinShare } from "../api/wx";
 
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
 
@@ -112,11 +120,10 @@ import "swiper/components/scrollbar/scrollbar.scss";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 export default {
   name: "HelloWorld",
-  components: { Swiper, SwiperSlide, Draw },
+  components: { Swiper, SwiperSlide, Draw, Robot },
   props: {},
   data() {
-    return {
-    };
+    return {};
   },
   methods: {
     onSwiper(swiper) {
@@ -124,6 +131,12 @@ export default {
     },
     onSlideChange() {
       console.log("slide change");
+    },
+  },
+  watch: {
+    $route(to, from) {
+      console.log(to);
+      wexinShare();
     },
   },
 };
