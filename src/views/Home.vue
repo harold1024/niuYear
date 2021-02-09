@@ -22,38 +22,38 @@
               <img src="../assets/images/01.jpg" alt="葛优躺" />
             </p> -->
             <p
-              class="them animate__animated animate__fadeIn animate__pulse delay1"
+              class="them animated fadeIn pulse delay1"
             >
-              牛年到!
+              牛年快乐!
             </p>
-            <p class="me animate__animated animate__fadeIn delay2">
+            <p class="me animated fadeIn delay2">
               唉,又老了一岁 -_-|||
             </p>
-            <p class="them animate__animated animate__fadeIn delay3">
+            <p class="them animated fadeIn delay3">
               是又长大了一岁 ?_?
             </p>
-            <p class="me animate__animated animate__fadeIn delay4">
+            <p class="me animated fadeIn delay4">
               长大有什么好的( # ‵ ′)凸
             </p>
-            <p class="them animate__animated animate__fadeIn delay5">
+            <p class="them animated fadeIn delay5">
               长大就可以实现愿望了
             </p>
-            <p class="me animate__animated animate__fadeIn delay6">
+            <p class="me animated fadeIn delay6">
               我的愿望你能实现吗
             </p>
-            <p class="them animate__animated animate__fadeIn delay7">
+            <p class="them animated fadeIn delay7">
               你有什么愿望?
             </p>
-            <p class="me animate__animated animate__fadeIn delay8">
+            <p class="me animated fadeIn delay8">
               我的新年愿望是变有钱
             </p>
-            <p class="them animate__animated animate__fadeIn delay9">
+            <p class="them animated fadeIn delay9">
               这个...有点难
             </p>
-            <p class="me animate__animated animate__fadeIn delay10">
+            <p class="me animated fadeIn delay10">
               我想要个大红包
             </p>
-            <p class="them animate__animated animate__fadeIn delay11">
+            <p class="them animated fadeIn delay11">
               我来给你送红包来了 ╰(￣▽￣)╮
             </p>
           </section>
@@ -76,6 +76,7 @@
       <swiper-slide>
         <div class="swiper-slide4 swiper-slide">
           <Robot></Robot>
+          <Gsap></Gsap>
         </div>
       </swiper-slide>
       <swiper-slide>
@@ -86,7 +87,7 @@
         </div>
       </swiper-slide>
     </swiper>
-    <div class="swiperBtnNext animate__animated animate__fadeIn delay12">
+    <div class="swiperBtnNext animated fadeIn delay12">
       <div class="arrow arrow-1"></div>
       <div class="arrow arrow-2"></div>
     </div>
@@ -103,6 +104,7 @@
 import { Swiper, SwiperSlide } from "swiper/vue";
 import Draw from "../components/draw";
 import Robot from "../components/robot";
+import Gsap from "../components/demo";
 import { wexinShare } from "../api/wx";
 
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y } from "swiper";
@@ -120,7 +122,7 @@ import "swiper/components/scrollbar/scrollbar.scss";
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 export default {
   name: "HelloWorld",
-  components: { Swiper, SwiperSlide, Draw, Robot },
+  components: { Swiper, SwiperSlide, Draw, Robot, Gsap},
   props: {},
   data() {
     return {};

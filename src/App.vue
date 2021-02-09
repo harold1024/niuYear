@@ -7,6 +7,7 @@
 </template>
 
 <style lang="scss">
+@import "./assets/iconfont/iconfont.scss";
 body {
   margin: 0;
   padding: 0;

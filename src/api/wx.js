@@ -1,4 +1,4 @@
-import get from "@/api/api"; //封装的api地址接口
+import {get} from "@/api/api"; //封装的api地址接口
 import wx from "weixin-js-sdk";
 // 引入微信分享插件
 export const wexinShare = function () {
