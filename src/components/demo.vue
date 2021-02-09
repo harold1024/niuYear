@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <!-- <header>header</header> -->
+    <header></header>
     <main>
       <div class="icons" ref="icons">
         <div ref="vue" style="display: none">
@@ -133,13 +133,13 @@ export default {
 header {
   @include flex;
   height: 15%;
-  background-color: hsla(0, 0%, 100%, 0.75);
-  border-bottom: 1px solid fade-out(#313131, 0.7);
+  background-color: hsla(0, 0%, 100%, 0);
+  // border-bottom: 1px solid fade-out(#313131, 0.7);
   z-index: 10;
 }
 
 main {
-  height: 100%;
+  height: 50%;
   // border-bottom: 1px solid fade-out(#313131, 0.7);
 
   .vue,

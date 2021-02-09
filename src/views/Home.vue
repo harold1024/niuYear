@@ -62,7 +62,7 @@
       <swiper-slide>
         <div class="swiper-slide2 swiper-slide">
           <img
-            src="../assets/images/b.jpg"
+            src="../assets/images/c.png"
             alt=""
             style="width: 100%; height: 100%"
           />
